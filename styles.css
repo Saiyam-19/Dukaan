@@ -121,7 +121,7 @@
     color: white;
   }
   
-  .navbar {
+  .main_content {
     flex: 1 1 0;
     overflow: auto;
   }
@@ -163,7 +163,7 @@
   
   /* Payouts Section */
   
-  .navbar {
+  .main_content {
     background-color: #f7f7f7;
   }
   
@@ -242,4 +242,94 @@
   }
   .top_navbar .navbar_icons .notifications{
     opacity: 95%;
+  }
+  .overview-wrapper {
+    padding: 32px;
+  }
+  
+  .overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .overview .overview_title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .overview .overview_filter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #3f3f46;
+  }
+  .overview .overview_filter .month_icon{
+    font-size: 12px;
+    font-weight: 800 !important;
+  }
+  
+  .overview_cards {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .amount_card {
+    padding: 24px 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: fit-content;
+    position: relative;
+  }
+  
+  .amount_card .card_header {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: #3f3f46;
+  }
+  
+  .amount_card .card_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .amount_card .card_body .amount {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .amount_card .card_body .info {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light_blue);
+    cursor: pointer;
+  }
+  .next_payout_icon{
+    margin-top: 2px;
+  }
+  .amount_card .card_body .info .amount_icon{
+    margin-top: 2px;
+  }
+  
+  .card_body .info .info_text {
+    text-decoration: underline;
+  }
+  
+  .card_body .info svg {
+    margin-top: 2px;
+    rotate: 270deg;
   }
