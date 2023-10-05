@@ -121,7 +121,125 @@
     color: white;
   }
   
-  .payouts {
+  .navbar {
     flex: 1 1 0;
     overflow: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    /* aside {
+      width: 100vw;
+    } */
+  
+    .main {
+      display: none;
+    }
+  
+    .mobile-screen {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 100dvh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .mobile-screen a {
+      color: #f97316;
+      font-weight: 500;
+    }
+  
+    .mobile-screen .desc {
+      margin-top: auto;
+    }
+  
+    .mobile-screen .portfolio {
+      margin-top: auto;
+    }
+  }
+  
+  /* Payouts Section */
+  
+  .navbar {
+    background-color: #f7f7f7;
+  }
+  
+  .top_navbar {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .top_navbar .navbar_heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .top_navbar .navbar_heading .navbar_title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .top_navbar .navbar_heading .navbar_info {
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+    color: #71717a;
+    cursor: pointer;
+  }
+  .top_navbar .navbar_heading .navbar_info .navbar_info_text {
+    margin-top: 3px;
+  }
+  
+  .top_navbar .navbar_search .search_box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #71717a;
+  }
+  
+  .navbar_search .search_box input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: Inter, sans-serif;
+    width: 100%;
+  }
+  
+  .navbar_search .navbar_box input::placeholder {
+    color: #71717a;
+  }
+  
+  .top_navbar .navbar_icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .top_navbar .navbar_icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfdddd;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #3f3f46;
+  }
+  .top_navbar .navbar_icons .dropdown{
+    font-size:28px;
+    opacity: 80%;
+  }
+  .top_navbar .navbar_icons .notifications{
+    opacity: 95%;
   }
